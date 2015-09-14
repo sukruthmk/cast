@@ -10,3 +10,5 @@ Cast is a Simple Social Networking Rest Api using Lumen framework. Cast gives th
 * Create a database and inform *.env* (remove *.example*)
 * `php artisan migrate` to create tables
 * `php artisan db:seed` to populate tables
+
+demo: https://fathomless-stream-1121.herokuapp.com/

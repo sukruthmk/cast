@@ -26,8 +26,8 @@ $app->group(['middleware' => 'jwt.auth'], function ($app) {
     $app->post('api/post','App\Http\Controllers\PostController@savePost');
     $app->put('api/post/{id}','App\Http\Controllers\PostController@updatePost');
     $app->delete('api/post/{id}','App\Http\Controllers\PostController@deletePost');
-    $app->get('api/post/new', 'App\Http\Controllers\PostController@newPosts');
-    $app->get('api/post/hot', 'App\Http\Controllers\PostController@hotPosts');
+    $app->get('api/posts/new', 'App\Http\Controllers\PostController@newPosts');
+    $app->get('api/posts/hot', 'App\Http\Controllers\PostController@hotPosts');
 
     // For Comments
     $app->get('api/post/comment/{id}', 'App\Http\Controllers\PostController@getComments');
